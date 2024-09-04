@@ -37,17 +37,18 @@
                   Shop
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#casual">Casual</a></li>
+                  <li><a class="dropdown-item" href="#formal">Formal</a></li>
+                  
+                  <li><a class="dropdown-item" href="#party">Party</a></li>
+                  <li><a class="dropdown-item" href="#gym">Gym</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">On Sale</a>
+                <a class="nav-link active" aria-current="page" href="#sale">On Sale</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">New Arrivals</a>
+                <a class="nav-link" href="#arrivals">New Arrivals</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Brands</a>
@@ -55,7 +56,7 @@
             </ul>
       
             <!-- Search and Icons -->
-            <form class="d-flex align-items-center input-search position-relative" role="search">
+            <form class="d-flex align-items-center  position-relative input-search" role="search">
               <i class='bx bx-search-alt-2 search-icon position-absolute'></i>
               <input class="form-control me-2" type="search" placeholder="Search for products..." style="background: #F0F0F0; border-radius: 2rem; padding-left: 40px;" aria-label="Search">
               
@@ -68,219 +69,237 @@
 
 
       <section>
-        <div>
-        <div class="container my-5  d-block d-lg-block">
+        <div class="container my-5">
+            
+
+
             <div class="row align-items-center">
-              <div class="col-md-6">
-                <h1 class="display-4 fw-bold text-dark">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-                <p class="lead">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-                <a href="#" class="btn btn-dark btn-lg rounded-5">Shop Now</a>
-              </div>
-              <div class="col-md-6">
-                <img src="./assest/modele.png" alt="Fashionable Couple" class="width-full height-full image-fluid">
-              </div>
-            </div>
-          
-            <div class="row text-center mt-5  all-quantity">
-              <div class="col-md-4 quantity">
-                <h3 class="fw-bold">200+</h3>
-                <p>International Brands</p>
-              </div>
-              <div class="col-md-4 quantity">
-                <h3 class="fw-bold">2,000+</h3>
-                <p>High-Quality Products</p>
-              </div>
-              <div class="col-md-4 quantity">
-                <h3 class="fw-bold">30,000+</h3>
-                <p>Happy Customers</p>
-              </div>
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold text-dark">FIND CLOTHES THAT MATCH YOUR STYLE</h1>
+                    <p class="lead">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+                    <a href="#" class="btn btn-dark btn-lg rounded-5">Shop Now</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="./assest/modele.png" alt="Fashionable Couple" class="img-fluid">
+                </div>
             </div>
             
-      
-          </div>
-          
-          <div class="row text-center mt-4 bg-dark width-full brand">
+        
+            <div class="row text-center mt-5 all-quantity">
+                <div class="col-md-4 quantity">
+                    <h3 class="fw-bold">200+</h3>
+                    <p>International Brands</p>
+                </div>
+                <div class="col-md-4 quantity">
+                    <h3 class="fw-bold">2,000+</h3>
+                    <p>High-Quality Products</p>
+                </div>
+                <div class="col-md-4 quantity">
+                    <h3 class="fw-bold">30,000+</h3>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+    
+        
+        </div>
+        <div class="row text-center mt-4 bg-dark py-3 w-100">
             <div class="col">
-              <div class="d-flex justify-content-around">
-                <img src="./assest/Group.png" alt="Versace" class="brand-logo">
-                <img src="./assest/zara-logo-1 1.png" alt="Zara" class="brand-logo">
-                <img src="./assest/gucci-logo-1 1.png" alt="Gucci" class="brand-logo">
-                <img src="./assest/prada-logo-1 1.png" alt="Prada" class="brand-logo">
-                <img src="./assest/Group (1).png" alt="Calvin Klein" class="brand-logo">
-              </div>
+                <div class="d-flex flex-wrap justify-content-around">
+                    <img src="./assest/Group.png" alt="Versace" class="brand-logo mx-2 my-2">
+                    <img src="./assest/zara-logo-1 1.png" alt="Zara" class="brand-logo mx-2 my-2 d-none d-lg-block">
+                    <img src="./assest/gucci-logo-1 1.png" alt="Gucci" class="brand-logo mx-2 my-2 d-none d-lg-block">
+                    <img src="./assest/prada-logo-1 1.png" alt="Prada" class="brand-logo mx-2 my-2 d-none d-lg-block">
+                    <img src="./assest/Group (1).png" alt="Calvin Klein" class="brand-logo mx-2 my-2 d-none d-lg-block">
+                </div>
             </div>
-          </div>
-          
-          
-      </section>
+        </div>
+    </section>
+    
+
+
+    <section id="arrivals">
       <div class="title-arrivals fw-bolder">NEW ARRIVALS</div>
-    
-    
-      <div class="d-flex justify-content-center cards">
-      
-      <div class="card d-flex  height-auto flex-column  justify-content-between  me-4" style="width: 30rem;">
-        <img class="card-img-top width-full" src="./assest/image 7.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text fw-bold">T-SHIRT WITH TAPE DETAILS</p>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star-half' style='color:#ffc633' ><span class="text-black rate">4.5/5</span></i>
-          <div class="price">$120</div>
-        </div>
-      </div>
-      
-      <div class="card me-4 d-none d-lg-block" style="width: 30rem;">
-        <img class="card-img-top width-full" src="./assest/image 8.png"  alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text fw-bold">SKINNY FIT JEANS</p>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star-half' style='color:#ffc633' ><span class="text-black rate">3.5/5</span></i>
-          <div class="d-flex align-items-center sold">
-          <div class="price">$240</div>
-          <div class="old-price">$260</div>
-          <div class="percentage">-20%</div>
-        </div>
-        </div>
-      </div>
-      
-      <div class="card me-4  d-none d-lg-block" style="width: 30rem;">
-        <img class="card-img-top width-full" src="./assest/image 9.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text fw-bold">CHECKERED SHIRT</p>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star-half' style='color:#ffc633' ><span class="text-black rate">4.5/5</span></i>
-          <div class="price">$180</div>
-        </div>
-      </div>
-      
-      <div class="card  me-4  d-none d-lg-block" style="width: 30rem;">
-        <img class="card-img-top width-full" src="./assest/image 10.png" " alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text fw-bold">SLEEVE STRIPED T-SHIRT</p>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star' style='color:#ffc633'  ></i>
-          <i class='bx bxs-star-half' style='color:#ffc633' ><span class="text-black rate">4.5/5</span></i>
-          <div class="d-flex align-items-center sold">
-            <div class="price">$130</div>
-            <div class="old-price">$160</div>
-            <div class="percentage">-30%</div>
-          </div>
-        </div>
-      </div>
-      
-      </div>
-      <button class="d-block bg-white text-center btn-view ">View All</button>
-      
-      </section>
-
-      <section id="arrivals">
-
-        <div class="title-arrivals fw-bolder">Top Selling</div>
-        
-        
-        <div class="d-flex justify-content-center cards">
-        
-        <div class="card d-flex  height-auto flex-column  justify-content-between me-4" style="width: 30rem;">
-          <img class="card-img-top width-full" src="./assest/image 11.png" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text fw-bold">VERTICAL STRIPED SHIRT</p>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633' ><span class="text-black rate">5/5</span></i>
-            <div class="d-flex align-items-center sold">
-              <div class="price">$212</div>
-              <div class="old-price">$232</div>
-              <div class="percentage">-20%</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card me-4 d-none d-lg-block" style="width: 30rem;">
-          <img class="card-img-top width-full" src="./assest/image 12.png"  alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text fw-bold">COURAGE GRAPHIC T-SHIRT</p>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633'  ><span class="text-black rate">4/5</span></i>
-            <div class="price">$145</div>
-          </div>
-        </div>
-        
-        <div class="card me-4  d-none d-lg-block" style="width: 30rem;">
-          <img class="card-img-top width-full" src="./assest/image 13.png" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text fw-bold">LOOSE FIT BERMUDA SHORTS</p>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633'  ><span class="text-black rate">3/5</span></i>
-            <div class="price">$80</div>
-          </div>
-        </div>
-        
-        <div class="card  me-4  d-none d-lg-block" style="width: 30rem;">
-          <img class="card-img-top width-full" src="./assest/image 14.png"  alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text fw-bold">FADED SKINNY JEANS</p>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star' style='color:#ffc633'  ></i>
-            <i class='bx bxs-star-half' style='color:#ffc633' ><span class="text-black rate">4.5/5</span></i>
-              <div class="price">$210</div>
-          </div>
-        </div>
-        
-        </div>
-        <button class="d-block bg-white text-center btn-view">View All</button>
-        
-        </section>
-      
-
-
-        <section>
-          <div class="container rounded-4   d-block d-lg-block dress-style">
-            <div class="title-arrivals fw-bolder">BROWSE BY dress STYLE</div>
-            <div class="row">
-              <div class="col style-hover">
-                <img src="./assest/Frame 61.png" class="rounded-4" alt="">
+      <div class="d-flex flex-wrap justify-content-center cards">
+          <a href="./addCart.html" style="text-decoration: none;">
+              <div class="card mb-4 flex-column justify-content-between" style="width: 100%; max-width: 30rem;">
+                  <img class="card-img-top" src="./assest/image 7.png" alt="Card image cap">
+                  <div class="card-body">
+                      <p class="card-text fw-bold">T-SHIRT WITH TAPE DETAILS</p>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+                      <div class="price">$120</div>
+                  </div>
               </div>
-              <div class="col style-hover">
-                <img src="./assest/Frame 62.png" class="rounded-4 " alt="">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col style-hover">
-                <img src="./assest/Frame 64.png" class="rounded-4" alt="">
-              </div>
-              <div class="col style-hover">
-                <img src="./assest/Frame 63.png" class="rounded-4 " alt="">
-              </div>
-            </div>
-          </div>
+          </a>
           
-          </section>
+          <a href="./addCart.html" style="text-decoration: none;">
+              <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+                  <img class="card-img-top" src="./assest/image 8.png" alt="Card image cap">
+                  <div class="card-body">
+                      <p class="card-text fw-bold">SKINNY FIT JEANS</p>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">3.5/5</span></i>
+                      <div class="d-flex align-items-center sold">
+                          <div class="price">$240</div>
+                          <div class="old-price">$260</div>
+                          <div class="percentage">-20%</div>
+                      </div>
+                  </div>
+              </div>
+          </a>
+          
+          <a href="./addCart.html" style="text-decoration: none;">
+              <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+                  <img class="card-img-top" src="./assest/image 9.png" alt="Card image cap">
+                  <div class="card-body">
+                      <p class="card-text fw-bold">CHECKERED SHIRT</p>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+                      <div class="price">$180</div>
+                  </div>
+              </div>
+          </a>
+          
+          <a href="./addCart.html" style="text-decoration: none;">
+              <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+                  <img class="card-img-top" src="./assest/image 10.png" alt="Card image cap">
+                  <div class="card-body">
+                      <p class="card-text fw-bold">SLEEVE STRIPED T-SHIRT</p>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star' style='color:#ffc633'></i>
+                      <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+                      <div class="d-flex align-items-center sold">
+                          <div class="price">$130</div>
+                          <div class="old-price">$160</div>
+                          <div class="percentage">-30%</div>
+                      </div>
+                  </div>
+              </div>
+          </a>
+      </div>
+      <button class="d-block bg-white text-center btn-view">View All</button>
+  </section>
+  
+
+  <section id="sale">
+    <div class="title-arrivals fw-bolder">top selling</div>
+    <div class="d-flex flex-wrap justify-content-center cards">
+        <a href="./addCart.html" style="text-decoration: none;">
+            <div class="card mb-4 flex-column justify-content-between" style="width: 100%; max-width: 30rem;">
+                <img class="card-img-top" src="./assest/image 11.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text fw-bold">T-SHIRT WITH TAPE DETAILS</p>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+                    <div class="price">$120</div>
+                </div>
+            </div>
+        </a>
+        
+        <a href="./addCart.html" style="text-decoration: none;">
+            <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+                <img class="card-img-top" src="./assest/image 12.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text fw-bold">SKINNY FIT JEANS</p>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">3.5/5</span></i>
+                    <div class="d-flex align-items-center sold">
+                        <div class="price">$240</div>
+                        <div class="old-price">$260</div>
+                        <div class="percentage">-20%</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        <a href="./addCart.html" style="text-decoration: none;">
+            <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+                <img class="card-img-top" src="./assest/image 13.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text fw-bold">CHECKERED SHIRT</p>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+                    <div class="price">$180</div>
+                </div>
+            </div>
+        </a>
+        
+        <a href="./addCart.html" style="text-decoration: none;">
+            <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+                <img class="card-img-top" src="./assest/image 14.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text fw-bold">SLEEVE STRIPED T-SHIRT</p>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star' style='color:#ffc633'></i>
+                    <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+                    <div class="d-flex align-items-center sold">
+                        <div class="price">$130</div>
+                        <div class="old-price">$160</div>
+                        <div class="percentage">-30%</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <button class="d-block bg-white text-center btn-view">View All</button>
+</section>
+
+      
+
+
+      <section>
+        <section>
+            <div class="container dress-style">
+                <div class="fw-bold text-center mb-4" style="font-size: 3rem;">BROWSE BY DRESS STYLE</div>
+                <div class="row gx-4 gy-4">
+                    <div class="col-12 col-md-6 col-lg-6 style-hover">
+                        <img src="./assest/Frame 61.png" alt="" class="img-fluid" style="height: 100%; width: 100%;" id="casual">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 style-hover">
+                        <img src="./assest/Frame 62.png" alt="" class="img-fluid" style="height: 100%; width: 100%;" id="formal">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 style-hover">
+                        <img src="./assest/Frame 64.png" alt="" class="img-fluid" style="height: 100%; width: 100%;" id="party">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 style-hover">
+                        <img src="./assest/Frame 63.png" alt="" class="img-fluid" style="height: 100%; width: 100%;" id="gym">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
 
   
           <section> 
             <div class="mx-3  fw-bold" style="font-size: 2rem;">OUR HAPPY CUSTOMERS</div>
 
-            <div class="container-lg">
+            <div class="container-lg feedback">
             
                 <div class="row my-1 align-items-center justify-content-center g-5" >
-                  <div class="col-8 col-lg-4 col-xl-3">
+                  <div class="col-8 col-lg-4 ">
                     <div class="card border-0">
                       <div class="card-body  py-4" style="cursor: pointer;">
                         <i class='bx bxs-star' style='color:#ffc633'  ></i>
@@ -296,7 +315,7 @@
                     </div>
                   </div>
               
-                   <div class="col-8 col-lg-4 col-xl-3  d-none d-lg-block">
+                   <div class="col-8 col-lg-4   d-none d-lg-block">
                     <div class="card border-0">
                       <div class="card-body  py-4" style="cursor: pointer;">
                         <i class='bx bxs-star' style='color:#ffc633'  ></i>
@@ -311,7 +330,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-8 col-lg-4 col-xl-3  d-none d-lg-block">
+                  <div class="col-8 col-lg-4   d-none d-lg-block">
                     <div class="card border-0">
                       <div class="card-body  py-4" style="cursor: pointer;">
                         <i class='bx bxs-star' style='color:#ffc633'  ></i>
@@ -326,21 +345,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-8 col-lg-4 col-xl-3  d-none d-lg-block">
-                    <div class="card border-0">
-                      <div class="card-body  py-4" style="cursor: pointer;">
-                        <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                        <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                        <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                        <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                        <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                        <h6>Ghazi R. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                        
-                        <p class="d-lg-block">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
-                        
-                      </div>
-                    </div>
-                  </div>
+                 
                   <div class="text-center fs-4 slide" style="cursor: pointer;">
                   <i class='bx bx-left-arrow-alt' ></i>
                   <i class='bx bx-right-arrow-alt' undefined ></i>
@@ -358,7 +363,74 @@
           </section>
 
 
-
+<footer> 
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex flex-column align-items-start">
+            <a href="#"><img src="./assest/logo.png" alt="" class="mb-2"></a>
+            <p class="my-4">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+            <div class="d-flex">
+              <i class='bx bxl-twitter me-2'></i>
+              <i class='bx bxl-facebook-circle me-2'></i>
+              <i class='bx bxl-instagram me-2'></i>
+              <i class='bx bxl-github'></i>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 mb-3 mb-md-0">
+            <h5>COMPANY</h5>
+            <a href="#about" class="d-block text-black text-decoration-none">About</a>
+            <a href="#features" class="d-block text-black text-decoration-none">Features</a>
+            <a href="#works" class="d-block text-black text-decoration-none">Works</a>
+            <a href="#career" class="d-block text-black text-decoration-none">Career</a>
+          </div>
+          <div class="col-6 col-md-2 mb-3 mb-md-0">
+            <h5>HELP</h5>
+            <a href="#Support" class="d-block text-black text-decoration-none">Customer Support</a>
+            <a href="#Details" class="d-block text-black text-decoration-none">Delivery Details</a>
+            <a href="#Conditions" class="d-block text-black text-decoration-none">Terms & Conditions</a>
+            <a href="#Privacy " class="d-block text-black text-decoration-none">Privacy Policy</a>
+          </div>
+          <div class="col-6 col-md-2 mb-3 mb-md-0">
+            <h5>FAQ</h5>
+            <a href="#Account" class="d-block text-black text-decoration-none">Account</a>
+            <a href="#Deliveries" class="d-block text-black text-decoration-none">Manage Deliveries</a>
+            <a href="#Orders" class="d-block text-black text-decoration-none">Orders</a>
+            <a href="#Payments" class="d-block text-black text-decoration-none">Payments</a>
+          </div>
+          <div class="col-6 col-md-2 mb-3 mb-md-0">
+            <h5>RESOURCES</h5>
+            <a href="#eBooks" class="d-block text-black text-decoration-none">Free eBooks</a>
+            <a href="#Tutorials" class="d-block text-black text-decoration-none">Development Tutorials</a>
+            <a href="#Blog" class="d-block text-black text-decoration-none">How to - Blog</a>
+            <a href="#Playlist" class="d-block text-black text-decoration-none">YouTube Playlist</a>
+          </div>
+          <div class="col-12 col-md-4">
+            <form class="my-5">
+              <h3>STAY UP TO DATE ABOUT OUR  LATEST OFFERS</h3>
+              <div class="form-group my-1">
+                <input type="email" class="form-control" placeholder="Enter email">
+              </div>
+              <button type="submit" class="btn btn-primary">Subscribe to Newsletter</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      
+      <hr>
+      <div class="d-flex align-items-center justify-content-between">
+        <p>© 2000-2021, All rights reserved</p>
+        <div style="cursor: pointer;">
+            <img src="./assest/Badge.png" alt="">
+            <img src="./assest/Badge (1).png" alt="">
+            <img src="./assest/Badge (2).png" alt="">
+            <img src="./assest/Badge (3).png" alt="">
+            <img src="./assest/Badge (4).png" alt="">
+        </div>
+      </div>
+      
+</footer>
 
 
 

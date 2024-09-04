@@ -3,6 +3,7 @@
 body {
     font-family: "Poppins", sans-serif;
        overflow-x: hidden;
+       
 }
 
 section {
@@ -172,61 +173,51 @@ section {
 
 .dress-style {
     background: #F0F0F0;
-    padding: 4rem ;
+   padding-bottom: 6rem;
+   padding-left: 5rem;
+   padding-right: 5rem;
+   border-radius: 3rem;
 }
 .style-hover {
     cursor: pointer;
+    transition: transform 0.3s ease;
+    
 }
 .style-hover:hover {
     transform: scale(1.05); 
 }
 
+footer {
+    background: #F0F0F0;
+    padding: 10px;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 675px) { 
-    section {
-        padding: 5px;
+@media (max-width:576px) {
+    .feedback {
+        margin-left: -40px;
     }
-    .btn {
-     margin-left: 25%;
+    .slide {
+        margin-left: 75px;
     }
-    .image-fluid {
-        width: 100%;
-        height: auto;
-        margin-left: -15%; 
-      }
-      .all-quantity {
-        margin-left: 34%;
-      }
-    
-      }
-      .cards {
-        margin-left: 25px;
-      }
-      .container-lg {
-        margin-left: -16%;
-      }
-      .slide {
-        margin-left: 30%;
-      }
-  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   
 
   
