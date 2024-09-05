@@ -73,19 +73,7 @@ section {
   .all-quantity {
     margin-right: 50%;
   }
-  .quantity {
-    position: relative;
-  }
-  .quantity:not(:first-child)::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 2px; 
-    background-color: #000; 
-    opacity: 0.1; 
-}
+
 
 .title-arrivals {
     text-align: center;
@@ -94,9 +82,8 @@ section {
 
 .cards {
     
-    justify-content: center; 
-    gap: 1rem; 
-    padding: 1rem; 
+   gap: .5rem;
+    padding: 2rem; 
     cursor: pointer ;
 }
 
@@ -190,6 +177,8 @@ section {
 footer {
     background: #F0F0F0;
     padding: 10px;
+    position: relative;
+    bottom: -60px;
 }
 
 
@@ -202,7 +191,13 @@ footer {
     .slide {
         margin-left: 75px;
     }
+    .all-quantity {
+      margin-left: 47%;
+    }
+   
 }
+
+
 
 
 
