@@ -162,9 +162,7 @@ section {
     background: #F0F0F0;
   padding: 2rem ;
 }
-.browse-style {
-  margin-left: 6rem;
-}
+
 .style-hover {
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -199,10 +197,7 @@ footer {
     padding: 7%;
    }
 
-.style-hover {
 
-  margin-left: -4rem;
-}
     .slide {
         margin-left: 75px;
     }
@@ -214,24 +209,17 @@ footer {
   width: 90%;
 }
 .feedback {
-  margin-left: -45px;
+
+  margin-left: 20px;
 }
 .latest {
   display: none;
 }
 
 
-.product {
-  display: flex;
-  flex-direction: row;
-}
-.all-product {
-  width: 90%;
-}
-.tshirt {
-  margin-left: -35px;
-  margin-top: 2rem;
-}
+
+
+
 }
 
 
