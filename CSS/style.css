@@ -169,9 +169,9 @@ section {
     cursor: pointer;
     transition: transform 0.3s ease;
     
-}.feedback-swiper {
-  position: relative;
-  height: 100%;
+}
+.feedback {
+  margin-left: 5rem;
 }
 .swiper-button-next, .swiper-button-prev {
   transform: translateY(-50%);
@@ -196,8 +196,8 @@ footer {
     font-size: 1.2rem;
   }
   .dress-style {
-   padding:0;
-  }
+    padding: 7%;
+   }
 
 .style-hover {
 
@@ -209,9 +209,7 @@ footer {
     .all-quantity {
       margin-left: 47%;
     }
-   .dress-style {
-    padding-left: 7%;
-   }
+   
 .input-search {
   width: 90%;
 }
@@ -221,8 +219,18 @@ footer {
 .latest {
   display: none;
 }
+
+
+.product {
+  display: flex;
+  flex-direction: row;
+}
+.all-product {
+  width: 90%;
+}
 .tshirt {
   margin-left: -35px;
+  margin-top: 2rem;
 }
 }
 
