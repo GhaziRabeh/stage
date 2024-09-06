@@ -19,7 +19,7 @@ section {
 
 .input-search {
     width: 50%;
-    margin-right: 29%;
+    margin-right: 10%;
   }
 
   .search-icon { 
@@ -193,15 +193,15 @@ footer {
 
 @media (max-width:576px) {
   .title-browse {
-    margin-left: 3rem;
+    font-size: 1.2rem;
   }
   .dress-style {
-   padding:0 4rem;
+   padding:0;
   }
 
 .style-hover {
 
-  margin-left: -2rem;
+  margin-left: -4rem;
 }
     .slide {
         margin-left: 75px;
