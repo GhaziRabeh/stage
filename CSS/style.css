@@ -160,15 +160,22 @@ section {
 
 .dress-style {
     background: #F0F0F0;
-   padding-bottom: 6rem;
-   padding-left: 5rem;
-   padding-right: 5rem;
-   border-radius: 3rem;
+  padding: 2rem ;
+}
+.browse-style {
+  margin-left: 6rem;
 }
 .style-hover {
     cursor: pointer;
     transition: transform 0.3s ease;
     
+}.feedback-swiper {
+  position: relative;
+  height: 100%;
+}
+.swiper-button-next, .swiper-button-prev {
+  transform: translateY(-50%);
+  color: #000;
 }
 .style-hover:hover {
     transform: scale(1.05); 
@@ -185,16 +192,38 @@ footer {
 
 
 @media (max-width:576px) {
-    .feedback {
-        margin-left: -40px;
-    }
+  .title-browse {
+    margin-left: 3rem;
+  }
+  .dress-style {
+   padding:0 4rem;
+  }
+
+.style-hover {
+
+  margin-left: -2rem;
+}
     .slide {
         margin-left: 75px;
     }
     .all-quantity {
       margin-left: 47%;
     }
-   
+   .dress-style {
+    padding-left: 7%;
+   }
+.input-search {
+  width: 90%;
+}
+.feedback {
+  margin-left: -45px;
+}
+.latest {
+  display: none;
+}
+.tshirt {
+  margin-left: -35px;
+}
 }
 
 
