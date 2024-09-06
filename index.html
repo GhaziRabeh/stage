@@ -1,1001 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Bootstrap link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--Bootstrap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!--boxicon Link-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--boxicon Link-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--Link of swiper-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!--Link of swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-    <!--file css Link-->
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>Shop.co</title>
+  <!--file css Link-->
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Shop.co</title>
 </head>
+
 <body>
 
-    <div class="text-center bg-dark w-100  fw-200 d-none d-lg-block" >
-        <div class="row align-items-center">
-          <div class="col  d-inline-flex text-light remise fw-light ">
-            Sign up and get 20% off to your first order. <a href="#sign" class="text-light fw-light">Sign Up Now</a>
-            <div class="x"><i class='bx bx-x fw-200' style="cursor: pointer;"></i></div>
-          </div>
-        </div>
+  <div class="text-center bg-dark w-100  fw-200 d-none d-lg-block">
+    <div class="row align-items-center">
+      <div class="col  d-inline-flex text-light remise fw-light ">
+        Sign up and get 20% off to your first order. <a href="#sign" class="text-light fw-light">Sign Up Now</a>
+        <div class="x"><i class='bx bx-x fw-200' style="cursor: pointer;"></i></div>
       </div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./assest/logo.png" class="ms-5" alt="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Shop
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#casual">Casual</a></li>
-                  <li><a class="dropdown-item" href="#formal">Formal</a></li>
-                  
-                  <li><a class="dropdown-item" href="#party">Party</a></li>
-                  <li><a class="dropdown-item" href="#gym">Gym</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#sale">On Sale</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#arrivals">New Arrivals</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Brands</a>
-              </li>
-            </ul>
-      
-            <!-- Search and Icons -->
-            <form class="d-flex align-items-center  position-relative input-search" role="search">
-              <i class='bx bx-search-alt-2 search-icon position-absolute'></i>
-              <input class="form-control me-2" type="search" placeholder="Search for products..." style="background: #F0F0F0; border-radius: 2rem; padding-left: 40px;" aria-label="Search">
-              
-              <a href="#add" class="ms-3 text-black icon"><i class='bx bx-cart-add' ></i></a>
-              <a href="#user" class=" ms-3 text-black icon"><i class='bx bx-user-circle' ></i></a>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-
-      <section>
-   <div class="container-lg">
-    <div class="row justify-content-center align-items-center">
-        <div class="col-md-5 text-center text-md-start">
-            <h1>
-                <div class="display-2 fw-bold">FIND CLOTHES THAT MATCH YOUR STYLE</div>
-            </h1>
-            <p class="lead my-4 text-muted">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-            <a href="#" class="btn btn-dark btn-lg rounded-5">Shop Now</a>
-        </div>
-        <div class="col-md-5 text-center d-none d-md-block" style="height: 100%;">
-            <img class="img-fluid" src="./assest/modele1.png" alt="modele">
-        </div>
     </div>
-    <div class="row text-center mt-5 all-quantity">
-        <div class="col-lg-4 col-12 d-flex justify-content-center quantity">
-            <div class="quantity-item">
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./assest/logo.png" class="ms-5" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#casual">Casual</a></li>
+              <li><a class="dropdown-item" href="#formal">Formal</a></li>
+
+              <li><a class="dropdown-item" href="#party">Party</a></li>
+              <li><a class="dropdown-item" href="#gym">Gym</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sale">On Sale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#arrivals">New Arrivals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Brands</a>
+          </li>
+        </ul>
+
+        <!-- Search and Icons -->
+        <form class="d-flex align-items-center  position-relative input-search" role="search">
+          <i class='bx bx-search-alt-2 search-icon position-absolute'></i>
+          <input class="form-control me-2" type="search" placeholder="Search for products..."
+            style="background: #F0F0F0; border-radius: 2rem; padding-left: 40px;" aria-label="Search">
+
+          <a href="#add" class="ms-3 text-black icon"><i class='bx bx-cart-add'></i></a>
+          <a href="#user" class=" ms-3 text-black icon"><i class='bx bx-user-circle'></i></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <section>
+    <div class="container-lg">
+      <div class="row justify-content-center align-items-end">
+        <div class="col-md-5 text-center text-md-start">
+          <h1>
+            <div class="display-2 fw-bold">FIND CLOTHES THAT MATCH YOUR STYLE</div>
+          </h1>
+          <p class="lead my-4 text-muted">Browse through our diverse range of meticulously crafted garments, designed to
+            bring out your individuality and cater to your sense of style.</p>
+          <a href="#" class="btn btn-dark btn-lg rounded-5">Shop Now</a>
+          <div class="row text-center mt-5 all-quantity">
+            <div class="col-lg-4 col-12 d-flex justify-content-center quantity">
+              <div class="quantity-item">
                 <h3 class="fw-bold">200+</h3>
                 <p>International Brands</p>
+              </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-12 d-flex justify-content-center quantity">
-            <div class="quantity-item">
+            <div class="col-lg-4 col-12 d-flex justify-content-center quantity">
+              <div class="quantity-item">
                 <h3 class="fw-bold">2,000+</h3>
                 <p>High-Quality Products</p>
+              </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-12 d-flex justify-content-center quantity">
-            <div class="quantity-item">
+            <div class="col-lg-4 col-12 d-flex justify-content-center quantity">
+              <div class="quantity-item">
                 <h3 class="fw-bold">30,000+</h3>
                 <p>Happy Customers</p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-
-
-
-
-        <div class="row text-center mt-4 bg-dark py-3 w-100">
-            <div class="col">
-                <div class="d-flex flex-wrap justify-content-around">
-                    <img src="./assest/Group.png" alt="Versace" class="brand-logo mx-2 my-2">
-                    <img src="./assest/zara-logo-1 1.png" alt="Zara" class="brand-logo mx-2 my-2 d-none d-lg-block">
-                    <img src="./assest/gucci-logo-1 1.png" alt="Gucci" class="brand-logo mx-2 my-2 d-none d-lg-block">
-                    <img src="./assest/prada-logo-1 1.png" alt="Prada" class="brand-logo mx-2 my-2 d-none d-lg-block">
-                    <img src="./assest/Group (1).png" alt="Calvin Klein" class="brand-logo mx-2 my-2 d-none d-lg-block">
-                </div>
-            </div>
+        <div class="col-md-5 text-center d-none d-md-block">
+          <img class="img-fluid" src="./assest/modele1.png" alt="modele" style="object-fit: cover; width: 100%;">
         </div>
-    </section>
-    
-
-
-    <section id="arrivals">
-      <div class="title-arrivals fw-bolder">NEW ARRIVALS</div>
-      <div class="d-flex flex-wrap justify-content-center cards">
-          <a href="./addCart.html" style="text-decoration: none;">
-              <div class="card mb-4 flex-column justify-content-between" style="width: 100%; max-width: 30rem;">
-                  <img class="card-img-top" src="./assest/image 7.png" alt="Card image cap">
-                  <div class="card-body">
-                      <p class="card-text fw-bold">T-SHIRT WITH TAPE DETAILS</p>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
-                      <div class="price">$120</div>
-                  </div>
-              </div>
-          </a>
-          
-          <a href="./addCart.html" style="text-decoration: none;">
-              <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
-                  <img class="card-img-top" src="./assest/image 8.png" alt="Card image cap">
-                  <div class="card-body">
-                      <p class="card-text fw-bold">SKINNY FIT JEANS</p>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">3.5/5</span></i>
-                      <div class="d-flex align-items-center sold">
-                          <div class="price">$240</div>
-                          <div class="old-price">$260</div>
-                          <div class="percentage">-20%</div>
-                      </div>
-                  </div>
-              </div>
-          </a>
-          
-          <a href="./addCart.html" style="text-decoration: none;">
-              <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
-                  <img class="card-img-top" src="./assest/image 9.png" alt="Card image cap">
-                  <div class="card-body">
-                      <p class="card-text fw-bold">CHECKERED SHIRT</p>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
-                      <div class="price">$180</div>
-                  </div>
-              </div>
-          </a>
-          
-          <a href="./addCart.html" style="text-decoration: none;">
-              <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
-                  <img class="card-img-top" src="./assest/image 10.png" alt="Card image cap">
-                  <div class="card-body">
-                      <p class="card-text fw-bold">SLEEVE STRIPED T-SHIRT</p>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star' style='color:#ffc633'></i>
-                      <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
-                      <div class="d-flex align-items-center sold">
-                          <div class="price">$130</div>
-                          <div class="old-price">$160</div>
-                          <div class="percentage">-30%</div>
-                      </div>
-                  </div>
-              </div>
-          </a>
       </div>
-      <button class="d-block bg-white text-center btn-view">View All</button>
+
+    </div>
+
+
+
+
+    <div class="row text-center  bg-dark py-3 w-100">
+      <div class="col">
+        <div class="d-flex flex-wrap justify-content-around">
+          <img src="./assest/Group.png" alt="Versace" class="brand-logo mx-2 my-2">
+          <img src="./assest/zara-logo-1 1.png" alt="Zara" class="brand-logo mx-2 my-2 d-none d-lg-block">
+          <img src="./assest/gucci-logo-1 1.png" alt="Gucci" class="brand-logo mx-2 my-2 d-none d-lg-block">
+          <img src="./assest/prada-logo-1 1.png" alt="Prada" class="brand-logo mx-2 my-2 d-none d-lg-block">
+          <img src="./assest/Group (1).png" alt="Calvin Klein" class="brand-logo mx-2 my-2 d-none d-lg-block">
+        </div>
+      </div>
+    </div>
   </section>
-  
+
+
+
+  <section id="arrivals">
+    <div class="title-arrivals fw-bolder">NEW ARRIVALS</div>
+    <div class="d-flex flex-wrap justify-content-center cards">
+      <a href="./addCart.html" style="text-decoration: none;">
+        <div class="card mb-4 flex-column justify-content-between" style="width: 100%; max-width: 30rem;">
+          <img class="card-img-top" src="./assest/image 7.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text fw-bold">T-SHIRT WITH TAPE DETAILS</p>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+            <div class="price">$120</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./addCart.html" style="text-decoration: none;">
+        <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+          <img class="card-img-top" src="./assest/image 8.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text fw-bold">SKINNY FIT JEANS</p>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">3.5/5</span></i>
+            <div class="d-flex align-items-center sold">
+              <div class="price">$240</div>
+              <div class="old-price">$260</div>
+              <div class="percentage">-20%</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./addCart.html" style="text-decoration: none;">
+        <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+          <img class="card-img-top" src="./assest/image 9.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text fw-bold">CHECKERED SHIRT</p>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+            <div class="price">$180</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./addCart.html" style="text-decoration: none;">
+        <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+          <img class="card-img-top" src="./assest/image 10.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text fw-bold">SLEEVE STRIPED T-SHIRT</p>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+            <div class="d-flex align-items-center sold">
+              <div class="price">$130</div>
+              <div class="old-price">$160</div>
+              <div class="percentage">-30%</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <button class="d-block bg-white text-center btn-view">View All</button>
+  </section>
+
 
   <section id="sale">
     <div class="title-arrivals fw-bolder">top selling</div>
     <div class="d-flex flex-wrap justify-content-center cards">
-        <a href="./addCart.html" style="text-decoration: none;">
-            <div class="card mb-4 flex-column justify-content-between" style="width: 100%; max-width: 30rem;">
-                <img class="card-img-top" src="./assest/image 11.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text fw-bold">T-SHIRT WITH TAPE DETAILS</p>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
-                    <div class="price">$120</div>
-                </div>
+      <a href="./addCart.html" style="text-decoration: none;">
+        <div class="card mb-4 flex-column justify-content-between" style="width: 100%; max-width: 30rem;">
+          <img class="card-img-top" src="./assest/image 11.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text fw-bold">T-SHIRT WITH TAPE DETAILS</p>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+            <div class="price">$120</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./addCart.html" style="text-decoration: none;">
+        <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+          <img class="card-img-top" src="./assest/image 12.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text fw-bold">SKINNY FIT JEANS</p>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">3.5/5</span></i>
+            <div class="d-flex align-items-center sold">
+              <div class="price">$240</div>
+              <div class="old-price">$260</div>
+              <div class="percentage">-20%</div>
             </div>
-        </a>
-        
-        <a href="./addCart.html" style="text-decoration: none;">
-            <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
-                <img class="card-img-top" src="./assest/image 12.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text fw-bold">SKINNY FIT JEANS</p>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">3.5/5</span></i>
-                    <div class="d-flex align-items-center sold">
-                        <div class="price">$240</div>
-                        <div class="old-price">$260</div>
-                        <div class="percentage">-20%</div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./addCart.html" style="text-decoration: none;">
+        <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+          <img class="card-img-top" src="./assest/image 13.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text fw-bold">CHECKERED SHIRT</p>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+            <div class="price">$180</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./addCart.html" style="text-decoration: none;">
+        <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
+          <img class="card-img-top" src="./assest/image 14.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text fw-bold">SLEEVE STRIPED T-SHIRT</p>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star' style='color:#ffc633'></i>
+            <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
+            <div class="d-flex align-items-center sold">
+              <div class="price">$130</div>
+              <div class="old-price">$160</div>
+              <div class="percentage">-30%</div>
             </div>
-        </a>
-        
-        <a href="./addCart.html" style="text-decoration: none;">
-            <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
-                <img class="card-img-top" src="./assest/image 13.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text fw-bold">CHECKERED SHIRT</p>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
-                    <div class="price">$180</div>
-                </div>
-            </div>
-        </a>
-        
-        <a href="./addCart.html" style="text-decoration: none;">
-            <div class="card mb-4 d-none d-lg-block" style="width: 100%; max-width: 30rem;">
-                <img class="card-img-top" src="./assest/image 14.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text fw-bold">SLEEVE STRIPED T-SHIRT</p>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star' style='color:#ffc633'></i>
-                    <i class='bx bxs-star-half' style='color:#ffc633'><span class="text-black rate">4.5/5</span></i>
-                    <div class="d-flex align-items-center sold">
-                        <div class="price">$130</div>
-                        <div class="old-price">$160</div>
-                        <div class="percentage">-30%</div>
-                    </div>
-                </div>
-            </div>
-        </a>
+          </div>
+        </div>
+      </a>
     </div>
     <button class="d-block bg-white text-center btn-view">View All</button>
-</section>
-
-      
+  </section>
 
 
-        <section >
-          <div class="container rounded-5 dress-style">
-            <div class="fw-bold text-center title-browse" style="font-size: 3.4rem;">BROWSE BY DRESS STYLE</div>
-            <div class="row browse-style ">
-              <div class="col-12 col-md-4 ">
-                <img src="./assest/Frame 61.png" alt="" class="style-hover py-2" style="width: 100%; height: 300px; ">
-              </div>
-              <div class="col-12 col-md-7">
-                <img src="./assest/Frame 62.png" alt="" class="style-hover py-2 " style="width: 100%; height: 300px;">
-              </div>
-              <div class="width-100"></div>
-              <div class="col-12 col-md-7">
-                <img src="./assest/Frame 64.png" alt="" class="style-hover py-2 " style="width: 100%; height: 300px;">
-              </div>
-              <div class="col-12 col-md-4">
-                <img src="./assest/Frame 63.png" alt="" class="style-hover py-2" style="width: 100%; height: 300px;">
-              </div>
-            </div>
-          </div>
-        </section>
-        
 
 
-  
-       
-
-
-        <section>
-        <div class="mx-3  fw-bold" style="font-size: 2rem;">OUR HAPPY CUSTOMERS</div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="container d-flex feedback">
-              <div class="col-8 col-lg-4 ">
-                <div class="card border-0">
-                  <div class="card-body  py-4" style="cursor: pointer;">
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                    
-                    <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                    
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="col-8 col-lg-4 d-none d-md-block ">
-                <div class="card border-0">
-                  <div class="card-body  py-4" style="cursor: pointer;">
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                    
-                    <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                    
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="col-8 col-lg-4  d-none d-md-block">
-                <div class="card border-0">
-                  <div class="card-body  py-4" style="cursor: pointer;">
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                    
-                    <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                    
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="col-8 col-lg-4 d-none d-md-block ">
-                <div class="card border-0">
-                  <div class="card-body  py-4" style="cursor: pointer;">
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                    <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                    
-                    <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                    
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-              
-            </div>
-            <div class="swiper-slide">
-              <div class="container d-flex feedback">
-                <div class="col-8 col-lg-4 ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="container d-flex feedback">
-                <div class="col-8 col-lg-4 ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="container d-flex feedback">
-                <div class="col-8 col-lg-4 ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="container d-flex feedback">
-                <div class="col-8 col-lg-4 ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="container d-flex feedback">
-                <div class="col-8 col-lg-4 ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="container d-flex feedback">
-                <div class="col-8 col-lg-4 ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="container d-flex feedback">
-                <div class="col-8 col-lg-4 ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="container d-flex feedback">
-                <div class="col-8 col-lg-4 ">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-                <div class="col-8 col-lg-4 d-none d-md-block">
-                  <div class="card border-0">
-                    <div class="card-body  py-4" style="cursor: pointer;">
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <i class='bx bxs-star' style='color:#ffc633'  ></i>
-                      <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'  ></i></h6>
-                      
-                      <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                      
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+  <section>
+    <div class="container rounded-5 dress-style">
+      <div class="fw-bold text-center title-browse" style="font-size: 3.4rem;">BROWSE BY DRESS STYLE</div>
+      <div class="row browse-style ">
+        <div class="col-12 col-md-4 ">
+          <img src="./assest/Frame 61.png" alt="" class="style-hover py-2" style="width: 100%; height: 300px; ">
         </div>
-      </section>
+        <div class="col-12 col-md-7">
+          <img src="./assest/Frame 62.png" alt="" class="style-hover py-2 " style="width: 100%; height: 300px;">
+        </div>
+        <div class="width-100"></div>
+        <div class="col-12 col-md-7">
+          <img src="./assest/Frame 64.png" alt="" class="style-hover py-2 " style="width: 100%; height: 300px;">
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="./assest/Frame 63.png" alt="" class="style-hover py-2" style="width: 100%; height: 300px;">
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer> 
-    
+
+
+
+
+
+
+  <section class="container-lg">
+    <div class="mx-3  fw-bold" style="font-size: 2rem;">OUR HAPPY CUSTOMERS</div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <div class="card-body  py-4" style="cursor: pointer;">
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'></i></h6>
+
+              <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <div class="card-body  py-4" style="cursor: pointer;">
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'></i></h6>
+
+              <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <div class="card-body  py-4" style="cursor: pointer;">
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'></i></h6>
+
+              <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <div class="card-body  py-4" style="cursor: pointer;">
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'></i></h6>
+
+              <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <div class="card-body  py-4" style="cursor: pointer;">
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'></i></h6>
+
+              <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <div class="card-body  py-4" style="cursor: pointer;">
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'></i></h6>
+
+              <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <div class="card-body  py-4" style="cursor: pointer;">
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'></i></h6>
+
+              <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <div class="card-body  py-4" style="cursor: pointer;">
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'></i></h6>
+
+              <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card border-0">
+            <div class="card-body  py-4" style="cursor: pointer;">
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <i class='bx bxs-star' style='color:#ffc633'></i>
+              <h6>Sarah M. <i class='bx bx-check-circle' style='color:#01ab31'></i></h6>
+
+              <p class=" d-lg-block">"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    </div>
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...
+    </div>
+    </div>
+  </section>
+
+  <footer>
+
     <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex flex-column align-items-start">
-            <a href="#"><img src="./assest/logo.png" alt="" class="mb-2"></a>
-            <p class="my-4">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
-            <div class="d-flex">
-              <a href="#twitter"><i class='bx bxl-twitter me-2'></i></a>
-              <a href="#facebook"><i class='bx bxl-facebook-circle me-2'></i></a>
-              <a href="#instagram"><i class='bx bxl-instagram me-2'></i></a>
-              <a href="#github"><i class='bx bxl-github'></i></a>
+      <div class="row">
+        <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex flex-column align-items-start">
+          <a href="#"><img src="./assest/logo.png" alt="" class="mb-2"></a>
+          <p class="my-4">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+          <div class="d-flex">
+            <a href="#twitter"><i class='bx bxl-twitter me-2'></i></a>
+            <a href="#facebook"><i class='bx bxl-facebook-circle me-2'></i></a>
+            <a href="#instagram"><i class='bx bxl-instagram me-2'></i></a>
+            <a href="#github"><i class='bx bxl-github'></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-3 mb-md-0">
+          <h5>COMPANY</h5>
+          <a href="#about" class="d-block text-black text-decoration-none">About</a>
+          <a href="#features" class="d-block text-black text-decoration-none">Features</a>
+          <a href="#works" class="d-block text-black text-decoration-none">Works</a>
+          <a href="#career" class="d-block text-black text-decoration-none">Career</a>
+        </div>
+        <div class="col-6 col-md-2 mb-3 mb-md-0">
+          <h5>HELP</h5>
+          <a href="#Support" class="d-block text-black text-decoration-none">Customer Support</a>
+          <a href="#Details" class="d-block text-black text-decoration-none">Delivery Details</a>
+          <a href="#Conditions" class="d-block text-black text-decoration-none">Terms & Conditions</a>
+          <a href="#Privacy " class="d-block text-black text-decoration-none">Privacy Policy</a>
+        </div>
+        <div class="col-6 col-md-2 mb-3 mb-md-0">
+          <h5>FAQ</h5>
+          <a href="#Account" class="d-block text-black text-decoration-none">Account</a>
+          <a href="#Deliveries" class="d-block text-black text-decoration-none">Manage Deliveries</a>
+          <a href="#Orders" class="d-block text-black text-decoration-none">Orders</a>
+          <a href="#Payments" class="d-block text-black text-decoration-none">Payments</a>
+        </div>
+        <div class="col-6 col-md-2 mb-3 mb-md-0">
+          <h5>RESOURCES</h5>
+          <a href="#eBooks" class="d-block text-black text-decoration-none">Free eBooks</a>
+          <a href="#Tutorials" class="d-block text-black text-decoration-none">Development Tutorials</a>
+          <a href="#Blog" class="d-block text-black text-decoration-none">How to - Blog</a>
+          <a href="#Playlist" class="d-block text-black text-decoration-none">YouTube Playlist</a>
+        </div>
+        <div class="col-12 col-md-4">
+          <form class="my-5">
+            <h3>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h3>
+            <div class="form-group my-1">
+              <input type="email" class="form-control" placeholder="Enter email">
             </div>
-          </div>
-          <div class="col-6 col-md-2 mb-3 mb-md-0">
-            <h5>COMPANY</h5>
-            <a href="#about" class="d-block text-black text-decoration-none">About</a>
-            <a href="#features" class="d-block text-black text-decoration-none">Features</a>
-            <a href="#works" class="d-block text-black text-decoration-none">Works</a>
-            <a href="#career" class="d-block text-black text-decoration-none">Career</a>
-          </div>
-          <div class="col-6 col-md-2 mb-3 mb-md-0">
-            <h5>HELP</h5>
-            <a href="#Support" class="d-block text-black text-decoration-none">Customer Support</a>
-            <a href="#Details" class="d-block text-black text-decoration-none">Delivery Details</a>
-            <a href="#Conditions" class="d-block text-black text-decoration-none">Terms & Conditions</a>
-            <a href="#Privacy " class="d-block text-black text-decoration-none">Privacy Policy</a>
-          </div>
-          <div class="col-6 col-md-2 mb-3 mb-md-0">
-            <h5>FAQ</h5>
-            <a href="#Account" class="d-block text-black text-decoration-none">Account</a>
-            <a href="#Deliveries" class="d-block text-black text-decoration-none">Manage Deliveries</a>
-            <a href="#Orders" class="d-block text-black text-decoration-none">Orders</a>
-            <a href="#Payments" class="d-block text-black text-decoration-none">Payments</a>
-          </div>
-          <div class="col-6 col-md-2 mb-3 mb-md-0">
-            <h5>RESOURCES</h5>
-            <a href="#eBooks" class="d-block text-black text-decoration-none">Free eBooks</a>
-            <a href="#Tutorials" class="d-block text-black text-decoration-none">Development Tutorials</a>
-            <a href="#Blog" class="d-block text-black text-decoration-none">How to - Blog</a>
-            <a href="#Playlist" class="d-block text-black text-decoration-none">YouTube Playlist</a>
-          </div>
-          <div class="col-12 col-md-4">
-            <form class="my-5">
-              <h3>STAY UP TO DATE ABOUT OUR  LATEST OFFERS</h3>
-              <div class="form-group my-1">
-                <input type="email" class="form-control" placeholder="Enter email">
-              </div>
-              <button type="submit" class="btn btn-primary">Subscribe to Newsletter</button>
-            </form>
-          </div>
+            <button type="submit" class="btn btn-primary">Subscribe to Newsletter</button>
+          </form>
         </div>
       </div>
-      
-      
-      <hr>
-      <div class="d-flex align-items-center justify-content-between">
-        <p>© 2000-2021, All rights reserved</p>
-        <div style="cursor: pointer;">
-            <img src="./assest/Badge.png" alt="">
-            <img src="./assest/Badge (1).png" alt="">
-            <img src="./assest/Badge (2).png" alt="">
-            <img src="./assest/Badge (3).png" alt="">
-            <img src="./assest/Badge (4).png" alt="">
-        </div>
+    </div>
+
+
+    <hr>
+    <div class="d-flex align-items-center justify-content-between">
+      <p>© 2000-2021, All rights reserved</p>
+      <div style="cursor: pointer;">
+        <img src="./assest/Badge.png" alt="">
+        <img src="./assest/Badge (1).png" alt="">
+        <img src="./assest/Badge (2).png" alt="">
+        <img src="./assest/Badge (3).png" alt="">
+        <img src="./assest/Badge (4).png" alt="">
       </div>
-      
-</footer>
+    </div>
+
+  </footer>
 
 
 
@@ -1004,15 +556,26 @@
 
 
 
-    <!--bootstrap js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<!--Swiper JS-->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!--bootstrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!--Swiper JS-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
 
     var swiper = new Swiper(".mySwiper", {
       cssMode: true,
+      slidesPerView: 1,
+      breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -1023,6 +586,8 @@
       mousewheel: true,
       keyboard: true,
     });
+    
   </script>
-  </body>
+</body>
+
 </html>

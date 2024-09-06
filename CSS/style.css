@@ -70,9 +70,6 @@ section {
     color: #777;
   }
 
-  .all-quantity {
-    margin-right: 50%;
-  }
 
 
 .title-arrivals {
@@ -178,7 +175,11 @@ section {
 .style-hover:hover {
     transform: scale(1.05); 
 }
-
+.product-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 footer {
     background: #F0F0F0;
     padding: 10px;
@@ -201,9 +202,7 @@ footer {
     .slide {
         margin-left: 75px;
     }
-    .all-quantity {
-      margin-left: 47%;
-    }
+ 
    
 .input-search {
   width: 90%;
@@ -213,9 +212,17 @@ footer {
   display: none;
 }
 
-
-
-
+.product-img {
+  flex-direction: column-reverse;
+}
+.product-img .product {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.product-img .product img {
+width: 90%;
+}
 
 }
 
