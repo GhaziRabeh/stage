@@ -79,8 +79,8 @@ section {
 
 .cards {
     
-   gap: .5rem;
-    padding: 2rem; 
+   gap: 1rem;
+   
     cursor: pointer ;
 }
 
@@ -208,7 +208,9 @@ footer {
         margin-left: 75px;
     }
  
-   
+   .cards {
+    margin-left: 14%;
+   }
 .input-search {
   width: 90%;
 }
