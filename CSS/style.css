@@ -11,7 +11,7 @@ section {
   }
 
 .remise {
-    margin-left: 33%;
+  margin-left: 37%;
 }
 .x  {
     margin-left: 60%;
@@ -180,6 +180,11 @@ section {
   align-items: center;
   justify-content: space-between;
 }
+
+.all-product {
+  height: 175px;
+}
+
 footer {
     background: #F0F0F0;
     padding: 10px;
@@ -225,6 +230,11 @@ width: 90%;
 }
 
 }
+
+
+
+
+
 
 
 
