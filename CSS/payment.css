@@ -6,41 +6,59 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-.container{
+.remise {
+    margin-left: 37%;
+  }
+  .x  {
+      margin-left: 60%;
+  }
+  
+  .input-search {
+      width: 50%;
+      margin-right: 10%;
+    }
+  
+    .search-icon { 
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #6c757d;
+      cursor: pointer;
+    }
+.container-paiment{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #1f242d;
+    
     padding: 25px;
 }
 
-.container form{
+.container-paiment form{
     width: 700px;
     padding: 40px;
     background: #fff;
     border-radius: 10px;
 }
 
-form .row{
+form .row-form{
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
 }
 
-.row .column{
+.row-form .column-form{
     flex: 1 1 250px
 }
 
-.column .title{
+.column-form .title{
     font-size: 20px;
     color: #333;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
 
-.column .input-box{
+.column-form .input-box{
     margin: 15px 0;
 }
 
@@ -57,7 +75,7 @@ form .row{
     font-size: 15px;
 }
 
-.column .flex{
+.column-form .flex{
     display: flex;
     gap: 15px;
 }
@@ -90,3 +108,19 @@ form .btn{
 form .btn:hover{
     background: linear-gradient(to bottom, #1f242d, #8175d3);
 }
+footer {
+    background: #F0F0F0;
+    padding: 10px;
+    position: relative;
+    bottom: -60px;
+}
+
+@media (max-width:576px) {
+
+  .input-search {
+    width: 90%;
+  }
+  
+
+  
+  }
